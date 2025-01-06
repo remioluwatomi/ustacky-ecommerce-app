@@ -1,0 +1,573 @@
+html, body, section, div, nav, ul,li,p, article, h3, header, footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif
+}
+
+/* javascript styles */
+
+.orange-name{
+    color: #ffA740;
+}
+
+.paystack-leftalign{
+    text-align: left;
+}
+
+.summary-div{
+    text-align: center;
+    padding: 20px;
+}
+
+.summary-div p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p.red{
+    color: red;
+    text-align: center;
+}
+
+div.summaryDivImg img{
+    width: 40%;
+}
+
+.summary-text{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+
+
+
+/* end of js style  */
+
+:root{
+    --lightPale: #ffcd9e
+}
+button{
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.lightPale{
+    background-color: var(--lightPale);
+}
+
+
+#cart.toggleDisplay{
+    display: none;
+}
+
+
+header #head nav ul li{
+    display: inline;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button#cart-div{
+    display: inline-flex;
+    align-items: center;
+    gap: 10%;
+    border-radius: 20px;
+    padding: 5px 20px 5px 10px;
+}
+
+.orangeBgC{
+    background-color: #ffA740;
+    color: white;
+}
+
+button#cart-div span{
+    font-size: 1.5rem;
+}
+header{
+    background-color: #ffcd9e;
+    padding: 30px 0;
+}
+
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav{
+    flex-basis: 80%;
+}
+nav ul{
+    display: flex;
+    gap: 10%;
+}
+
+#cart-logo{
+    width: 2rem;
+}
+
+header h1{
+    color: #ff7a40;
+    font-weight: 900;
+}
+
+header #heroImg-div img{
+    width: 100%;
+}
+
+
+header div #shop-now{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+header div #shop-now > a#shop-now-link{
+    font-size: 1.7rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+
+#writeup{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#writeup p{
+    font-size: 1.5rem;
+    padding: 15% 10%;
+    line-height: 1.5;
+}
+
+#gadgetsSec h2{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+#gadgetsSec #gadgetsArticle{
+    width: 100%;
+}
+
+article div.price-absolute{
+    position: absolute;
+    font-size: 3rem;
+    width: 90%;
+    height: 95%;
+    top: 2.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 3%;
+    border: none;
+    z-index: -1;
+}
+article div.price-absolute p {
+    opacity: 1;
+    color: white;
+}
+
+#gadgetsArticle div.productImg-div img{
+     width: 100%;
+}
+#gadgetsArticle div.productImg-div img:hover{
+    z-index: -2;
+    position: relative;
+}
+
+#gadgetsArticle div.productImg-div{
+    width: 100%;
+    margin: 0 auto;
+    padding: 3% 5%;
+    position: relative;
+}
+
+
+#gadgetsArticle .nameOf-gadget{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+#gadgetsArticle div button.btn{
+    display: block;
+    margin: 4% auto;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 20px;
+}
+.gBtn-div{
+    padding: 10px 15%;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    padding: 10% 5%;
+    gap: 5%;
+}
+footer small{
+    margin-left: auto;
+    color: white;
+}
+
+#Fems-logoDiv{
+    width: 7rem;
+}
+#Fems-logo{
+    width: 100%;
+}
+
+
+
+
+
+@media (max-width:750px) {
+    div#Hems-logoDiv{
+        display: none;
+    }
+
+    header #heroImg-div{
+        max-width: 315px;
+        margin: 0 auto;
+    }
+
+    header h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+
+@media (min-width: 400px) {
+    #cart table th{
+        font-size: 1.2rem;
+    }
+
+    #cart table .template{
+        font-size: 1rem;
+    }
+
+    .summary-div{
+        padding: 40px;
+    }
+    
+    .summary-div p.order-received {
+        font-size: 1.2rem;
+    }
+
+    .summary-text{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (min-width:751px) {
+
+    .summary-text{
+        font-size: 2rem;
+    }
+
+    div.summaryDivImg img{
+        width: 30%;
+    }
+
+    .summary-div{
+        padding: 50px;
+    }
+    
+    .summary-div p {
+        font-size: 1.5rem;
+    }
+
+    #gadgetsArticle div button.btn{
+        font-size: 1rem;
+    }
+
+    header #head nav ul{
+        justify-content: center;
+    }
+
+    header #head{
+        width: 70%;
+    }
+
+    header #head nav ul li{
+        font-size: 2.3rem;
+    }
+    header h1{
+        font-size: 3rem;
+    }
+
+
+    section#headCont{
+        display: flex;
+        width: 70%;
+        margin: 50px auto 0;
+        align-items:center;
+    }
+    div#heroImg-div{
+        min-width: 300px;
+    }
+
+    header div button#shop-now{
+        font-size: 2rem;
+    }
+
+    #writeup p{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+
+    section #gadget-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        width: 90%;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    footer{
+        padding: 3rem 5rem;
+    }
+    #Fems-logoDiv{
+        width: 10rem;
+    }
+
+    small{
+        font-size: 1rem;
+    }
+
+}
+
+/* media query for products-gadget grid */
+@media (min-width:900px) {
+    section #gadget-grid{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width:950px) {
+    #cart form, #cart table{
+        max-width: 500px;
+    } 
+
+}
+
+@media (max-width:1439px) {
+    section#cart{
+        position: absolute;
+        top: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ffe9d6;
+        width: 90%;
+        max-width: 700px;
+    }
+
+    div#root{
+        position: relative;
+    }
+
+    #cart table{
+        width: 70%;
+        text-align: center;
+    }
+
+    #cart table th{
+        padding: 0.5rem;
+        font-weight: 600;
+    }
+
+    #cart table .template{
+        font-size: 14px;
+    }
+
+
+
+    #cart table .tempBtn button{
+        border-radius: 7%;
+        font-size: 1rem;
+    }
+
+    #cart table .tempRmvBtn{
+        font-size: 14px;
+        padding: 10px 2px;
+        border-radius: 10%;
+    }
+
+    #cart form{
+        margin-top: 40px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #cart form .ifield{
+        font-size: 1rem;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0 10px 5px;
+    }
+
+    #cart form .ifield:focus{
+        outline: none;
+    }
+
+    #cart form .i-div{
+        margin-top: 20px;
+    }
+
+    div#totalAmount{
+        margin-top: 20px;
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    div#totalAmount p{
+        line-height: 1.5;
+    }
+    
+    #cart-btn-div{
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    #cart-btn-div button{
+        font-size: 1rem;
+        border-radius: 5%;
+        margin-right: 2px;
+        padding: 0.8rem 0.9rem;
+        display: inline-block;
+    }
+}
+
+@media (min-width:1440px) {
+    header h1{
+        font-size: 4.5rem;
+    }
+
+    #writeup p{
+        padding: 60px 4%;
+        font-size: 2.7rem;
+
+    }
+    #Fems-logoDiv{
+        width: 12rem;
+    }
+    footer{
+        padding: 5rem 20rem;
+    }
+    small{
+        font-size: 1.5rem;
+    }
+    section#cart{
+        width: 50%;
+    }
+
+    section#cart{
+        position: absolute;
+        top: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ffe9d6;
+        width: 50%;
+    }
+    div#root{
+        position: relative;
+    }
+    #cart table{
+        width: 70%;
+        text-align: center;
+    }
+    #cart table th{
+        font-size: 1.5rem;
+        font-weight: 900;
+        padding: 2rem;
+    }
+    #cart table .template{
+        font-size: 1.3rem;
+    }
+    #cart table .tempBtn{
+        display: inline-flex;
+        align-items: center;
+        gap: 10%;
+        justify-content: center;
+    }
+    #cart table .tempBtn button{
+        border-radius: 15%;
+        font-size: 1.3rem;
+    }
+    #cart table .tempRmvBtn{
+        font-size: 1.3rem;
+        padding: 10px 5px;
+        border-radius: 10%;
+        font-weight: bold;
+    }
+    
+    #cart form{
+        margin-top: 40px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #cart form .ifield{
+        font-size: 1.2rem;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0 10px 5px;
+    }
+    #cart form .ifield:focus{
+        outline: none;
+    }
+    #cart form .i-div{
+        margin-top: 30px;
+    }
+    
+    div#totalAmount{
+        margin-top: 40px;
+        text-align: center;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    div#totalAmount p{
+        line-height: 1.5;
+    }
+    
+    #cart-btn-div{
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    #cart-btn-div button{
+        font-size: 1.5rem;
+        border-radius: 5%;
+        margin-right: 3px;
+        padding: 1rem 1.5rem;
+        display: inline-block;
+    }
+
+
+}
+
