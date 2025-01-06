@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMS || E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <header id="header">
+            <section id="head">
+                <div id="Hems-logoDiv">
+                    <img src="Images/EMS.svg" alt="" id="Hems-logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li class="nav-li"><a href="#header">Intro</a></li>
+                        <li class="nav-li"><a href="#writeup">About</a></li>
+                        <li class="nav-li"><a href="#gadgetsSec">Shop</a></li>
+                    </ul>
+                </nav>
+                <button class="orangeBgC" id="cart-div">
+                    <img src="Images/cart.svg" alt="" id="cart-logo">
+                    <span>0</span>
+                </button>
+            </section>
+            <section id="headCont">
+                <div id="theMiliStore">
+                    <h1>THE <br> E-MILLENIAL STORE</h1>
+                </div>
+                <div id="heroImg-div">
+                    <img src="Images/heroImage.png" alt="">
+                </div>
+            </section>
+            <div>
+                <button class="btn orangeBgC" id="shop-now">
+                    <a href="#gadgetsSec" id="shop-now-link">Shop Now</a>
+                </button>
+            </div>
+        </header>
+        <section id="writeup">
+            <p>E-millienial is an hypothetical online store for gadgets we blieve every 'Millenial' or 'Gen-Z' should have today.
+                We've got mobile phones, laptops, smartwatches and other gadgets.Explore all our gadgets and choose the ones that suit you.
+            </p>
+        </section>
+    
+        <section id="gadgetsSec">
+    
+            <h2>OUR GADGETS</h2>
+            <section id="gadget-grid">
+                <article id="gadgetsArticle" >
+                    <div class="productImg-div">
+                        <img src="Images/product1.png" alt="">
+                        <div class="price-absolute"><p class="p-price"><span>&#8358</span><span data-priceproduct="SAMSUNG TV">150000</span></p>
+                        </div>
+                    </div>
+                    <h3 class="nameOf-gadget">SAMSUNG TV</h3>
+                    <div class="gBtn-div">
+                        <button class="btn add2cart orangeBgC" data-product="SAMSUNG TV">ADD TO CART</button>
+                    </div>
+                </article>
+        
+                <article id="gadgetsArticle">
+                    <div class="productImg-div">
+                        <img src="Images/product2.png" alt="">
+                        <div class="price-absolute"><p class="p-price"><span>&#8358</span><span data-priceproduct="PIXEL 4a">200000</span></p>
+                        </div>
+                    </div>
+                    <h3 class="nameOf-gadget">PIXEL 4a</h3>
+                    <div class="gBtn-div">
+                        <button data-product="PIXEL 4a" class="btn add2cart orangeBgC">ADD TO CART</button>
+                    </div>
+                    
+                </article>
+        
+                <article id="gadgetsArticle">
+                    <div class="productImg-div">
+                        <img src="Images/product3.png" alt=""> 
+                        <div class="price-absolute"><p class="p-price"><span>&#8358</span><span data-priceproduct="PS 5">450000</span></p>
+                        </div>
+                    </div>
+                    <h3 class="nameOf-gadget">PS 5</h3>
+                    <div class="gBtn-div">
+                        <button data-product="PS 5" class="btn add2cart orangeBgC">ADD TO CART</button>
+                    </div>
+                </article>
+        
+                <article id="gadgetsArticle">
+                    <div class="productImg-div">
+                        <img src="Images/product4.png" alt="">
+                        <div class="price-absolute"><p class="p-price"><span>&#8358</span><span data-priceproduct="MACBOOK AIR">800000</span></p>
+                        </div>
+                    </div>
+                    <h3 class="nameOf-gadget">MACBOOK AIR</h3>
+                    <div class="gBtn-div">
+                        <button data-product="MACBOOK AIR" class="btn add2cart orangeBgC">ADD TO CART</button>
+                    </div>
+                </article>
+        
+                <article id="gadgetsArticle">
+                    <div class="productImg-div">
+                        <img src="Images/product5.png" alt="">
+                        <div class="price-absolute"><p class="p-price"><span>&#8358</span><span data-priceproduct="APPLE WATCH">350000</span></p>
+                        </div>
+                    </div>
+                    <h3 class="nameOf-gadget">APPLE WATCH</h3>
+                    <div class="gBtn-div">
+                        <button data-product="APPLE WATCH" class="btn add2cart orangeBgC">ADD TO CART</button>
+                    </div>
+                </article>
+        
+                <article id="gadgetsArticle">
+                    <div class="productImg-div">
+                        <img src="Images/product6.png" alt="">
+                        <div class="price-absolute"><p class="p-price"><span>&#8358</span><span data-priceproduct="AIR PODS">500000</span></p>
+                        </div>
+                    </div>
+                    <h3 class="nameOf-gadget">AIR PODS</h3>
+                    <div class="gBtn-div">
+                        <button data-product="AIR PODS" class="btn add2cart orangeBgC">ADD TO CART</button>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <footer>
+            <div id="Fems-logoDiv">
+                <img src="Images/EMS.svg" alt="" id="Fems-logo">
+            </div>
+            <small>Designed and Crafted by a Frontend Ninja</small> 
+        </footer>
+
+        <!-- cart -->
+        <!-- i stands for input tag.. used for id and classes  -->
+        <!-- instace: iname-div -->
+        <section id="cart" class=" a b c toggleDisplay">
+            <table id="tab">
+                <tr>
+                    <th>S/N</th>
+                    <th>Item</th>
+                    <th class="paystack-response-visibility">Price</th>
+                    <th>Quantity</th>
+                    <th></th>
+                </tr>
+                <!-- template below -->
+                
+            </table>
+
+            <form action="" method="post" id="cartForm">
+                <div id="iname-div" class="i-div">
+                    <input type="text" placeholder="Your Name" class="ifield lightPale">
+                </div>
+                <div id="imail-div" class="i-div">
+                    <input type="email" placeholder="Your Email" class="ifield lightPale">
+                </div>
+                <div id="iphone-div" class="i-div">
+                    <input type="tel" placeholder="Your Phone Number" class="ifield lightPale">
+                </div>
+            </form>
+            <div id="totalAmount">
+                <p>
+                    Total Amount to be paid <br>&#8358<span id="amountb4Checkout">0</span>
+                </p>
+            </div>
+            <div id="cart-btn-div">
+                <button type="" class="lightPale" id="continueShopping">Continue Shopping</button>
+                <button type="Submit" class="orangeBgC" id="checkOut-btn" >Checkout</button>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+    <script src="paystack.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+</body>
+</html>
